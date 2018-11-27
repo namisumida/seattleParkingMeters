@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Seattle Parking Meters</title>
+	<link type="text/css" href="css/main.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+    integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+    crossorigin=""/>
+</head>
+<body>
+	<section id="title">
+		<h1 id="title-text">Seattle Parking Meter Data</h1>
+		<h3 id="subtitle-text">Subtitle</h3>
+		<p id="instructions">Instructions</h3>
+	</section>
+	<section id="options">
+		<div id="button-container">
+			<button type="button" id="button-sun" value="sun">Sunday</button>
+			<button type="button" id="button-mon" value="mon">Monday</button>
+			<button type="button" id="button-tue" value="tue">Tuesday</button>
+			<button type="button" id="button-wed" value="wed">Wednesday</button>
+			<button type="button" id="button-thu" value="thu">Thursday</button>
+			<button type="button" id="button-fri" value="fri">Friday</button>
+			<button type="button" id="button-sat" value="sat">Saturday</button>
+		</div>
+	</section>
+	<section id="graphic">
+		<div id="map-container">
+		</div>
+		<svg id="graphic-svg" height="100%" width="100%"></svg>
+	</section>
+
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+	<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+    integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+    crossorigin=""></script>
+	<script src="js/build.js"></script>
+
+</body>
+</html>
